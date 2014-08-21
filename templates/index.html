@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div>
+  Put your long, boring url here:<br>
+  <form action= "/new_url" method="post" name="input">
+    <input id = 'url' name='url' type = 'text'>
+    <input type = "submit" value = "Submit">
+  </form>
+</div>
+<div>{% block new_url %}{% endblock %}</div>
+{% endblock %}
